@@ -1,0 +1,5 @@
+
+cd layers/poky
+. ./oe-init-build-env ../../build
+echo "starting bitbake from this folder: $PWD"
+bitbake update-image
