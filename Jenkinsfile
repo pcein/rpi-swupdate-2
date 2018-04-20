@@ -8,7 +8,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh 'source layers/poky/oe-init-build-env; bitbake update-image'
+                sh '. layers/poky/oe-init-build-env build; bitbake update-image'
             }
         }
     }
