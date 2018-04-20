@@ -7,8 +7,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building...'
-                sh './bake'
+                sh "#!/bin/bash \n" +
+		   "./bake"
             }
         }
     }

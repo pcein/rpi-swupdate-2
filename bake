@@ -3,6 +3,8 @@ export BUILDDIR
 
 cd layers/poky
 . ./oe-init-build-env 
+echo 'After sourcing oe-init-build-env..in folder'
+pwd
 cd ../../build
 echo "starting bitbake from this folder: $PWD"
 bitbake update-image
